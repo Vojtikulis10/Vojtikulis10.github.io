@@ -2,3 +2,7 @@ h1 {
     text-align: center;
     color: aqua;
 }
+img {
+	width: 300px;
+	border-radius: 10% 30% 50% 70%;
+}
