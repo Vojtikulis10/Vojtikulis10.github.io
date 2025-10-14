@@ -105,3 +105,24 @@ body {
     color: orange;
     font-weight: bold;
 }
+
+
+#navbar ul li a i {
+  margin-right: 0.5rem; /* mezera mezi ikonou a textem */
+}
+
+/* --- MOBILNÍ VERZE: při šířce do 600px skryj text --- */
+@media (max-width: 37.5rem) { 
+  #navbar ul li a {
+    font-size: 0; 
+  }
+
+  #navbar ul li a i {
+    font-size: 1.5rem; 
+    margin: 0 0.625rem; 
+  }
+
+  #navbar ul {
+    gap: 1.25rem; 
+  }
+}
