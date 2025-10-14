@@ -130,7 +130,7 @@ body {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: rgb(213, 0, 0);
+  background-color: red;
   color: #ffd700;
   font-size: 0.9rem;
   border-radius: 10px;
