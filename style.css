@@ -1,57 +1,107 @@
-.container {max-width: 1024px;}
-.container {margin: auto;}
-
-.container{
-    background-color: red;
-    margin: 40px;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+/* ====== ZÁKLADNÍ NASTAVENÍ ====== */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #a40000;
+    color: orange;
 }
 
+/* ====== NAVIGACE ====== */
 #navbar {
-    background-color:orange;
+    background-color: orange;
     color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 16px 40px;
     font-size: 24px;
     font-weight: bold;
     border-radius: 20px;
+    margin: 60px auto 60px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 10px;
 }
-#navbar a {
-    color: red;
-    text-decoration: none;
 
+#navbar a {
+    color: rgb(213, 0, 0);
+    text-decoration: none;
+    transition: 0.55s;
 }
+
+
 #navbar ul {
     display: flex;
     list-style: none;
     align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
 }
+
 #navbar ul li a {
-    padding: 10px;
-    margin: 0 4px;
-}
-#navbar ul li a:hover {
-    background-color: white;
+    padding: 10px 14px;
     border-radius: 5px;
 }
-.idecko {max-width: 1024px;}
-.idecko {margin: auto;}
 
-.idecko{
+#navbar ul li a:hover {
+    background-color: white;
+}
+
+/* ====== HLAVNÍ OBSAH ====== */
+.container {
+    max-width: 1024px;
+    margin: auto;
+    text-align: center;
+    background-color: red;
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.obsah {
     background-color: rgb(213, 0, 0);
     color: orange;
     border-radius: 20px;
     padding: 20px;
     font-size: 16px;
-
 }
 
-img {
-	align-items: center;
+.obsah img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* Remove bullets and left padding for lists inside main content */
+.obsah ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.obsah ul li {
+    margin: 6px 0; /* spacing between items */
+    padding-left: 0;
+}
+
+/* ====== MESSI SEKCE ====== */
+.messi-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.messi-section img {
+    display: block;
+    margin: 0 auto;
     width: 300px;
-	border-radius: 10% 10% 10% 10%;
+    border-radius: 20px;
+}
+
+.messi-section p {
+    text-align: center;
+    color: orange;
+    font-weight: bold;
 }
