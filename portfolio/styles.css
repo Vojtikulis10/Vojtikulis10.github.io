@@ -195,6 +195,19 @@ img {
   margin-bottom: 6rem;
 }
 
+.project-tile .project-image {
+    width: 20em;   /* pevná šířka obrázku */
+    height: auto;   /* zachování proporcí */
+    display: block; 
+    margin: 0 auto; /* vycentrování */
+}
+
+
+
+
+
+
+}
 @media (max-width: 30.625em) {
   .projects-section {
     padding: 6rem 1rem;
@@ -329,3 +342,13 @@ footer i {
     text-align: center;
   }
 }
+
+.project-tile {
+    background: none; /* odstraní šedé pozadí */
+    padding: 0;       /* odstraní vnitřní odsazení */
+    display: inline-block; /* zmenší box kolem obrázku */
+    box-shadow: none; /* odstraní stín */
+}
+
+}
+
