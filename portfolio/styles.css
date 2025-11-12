@@ -196,10 +196,11 @@ img {
 }
 
 .project-tile .project-image {
-    width: 20em;   /* pevná šířka obrázku */
-    height: auto;   /* zachování proporcí */
-    display: block; 
-    margin: 0 auto; /* vycentrování */
+    width: 100%;        /* obrázek zabere celou šířku projektu */
+    height: 60rem;      /* pevná výška pro všechny */
+    object-fit: cover;  /* ořízne obrázek, zachová proporce */
+    display: block;
+    border-radius: 4px; /* volitelně zaoblení rohů */
 }
 
 
